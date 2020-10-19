@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="501.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchOrderController">
+   <children>
+      <Label layoutX="139.0" layoutY="48.0" text="SEARCH ORDER">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.8969465512355775">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.043150684931506846">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.08150684931506849">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.13082191780821917">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.17465753424657532">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color opacity="0.034602049738168716" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="37.0" layoutY="112.0" prefHeight="26.0" prefWidth="582.0" promptText="SEARCH ANYTHING" />
+      <Button fx:id="btnHome" layoutX="37.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnHome_OnAction" text="HOME" />
+      <TableView fx:id="tblSearchDetails" layoutX="33.0" layoutY="168.0" onMouseClicked="#tblSearchDetails_OnMouseClicked" prefHeight="282.0" prefWidth="582.0">
+        <columns>
+          <TableColumn prefWidth="102.79999923706055" text="ORDER ID" />
+          <TableColumn prefWidth="106.79998779296875" text="ORDER DATE" />
+            <TableColumn prefWidth="149.1999969482422" text="CUSTOMER NAME" />
+            <TableColumn prefWidth="128.79998779296875" text="CUSTOMER ID" />
+            <TableColumn prefWidth="94.4000244140625" text="TOTAL" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
